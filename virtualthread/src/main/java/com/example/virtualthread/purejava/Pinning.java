@@ -17,15 +17,18 @@ public class Pinning {
         @Override
         public void run() {
 
-            synchronized (this) {
+//            synchronized (this) {
                 log.info("1) run. thread: " + Thread.currentThread());
+                lock.lock();
                 try {
                     Thread.sleep(5000);
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
+                } finally {
+                    lock.unlock();
                 }
                 log.info("2) run. thread: " + Thread.currentThread());
-            }
+//            }
 
         }
     };
