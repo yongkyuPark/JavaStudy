@@ -4,4 +4,8 @@ spring:
   threads:
     virtual:
       enabled: true
-
+  task:
+    scheduling:
+      thread-name-prefix: mySch-
+    execution:
+      thread-name-prefix: myTask-
