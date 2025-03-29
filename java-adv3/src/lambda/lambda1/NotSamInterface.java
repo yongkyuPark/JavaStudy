@@ -1,4 +1,4 @@
-package lambda.lanbda1;
+package lambda.lambda1;
 
 public interface NotSamInterface {
     void run();

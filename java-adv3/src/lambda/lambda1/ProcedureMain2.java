@@ -1,4 +1,4 @@
-package lambda.lanbda1;
+package lambda.lambda1;
 
 import lambda.Procedure;
 
