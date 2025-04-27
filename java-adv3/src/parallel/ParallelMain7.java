@@ -43,7 +43,7 @@ public class ParallelMain7 {
                         throw new RuntimeException(e);
                     }
                 }).sum();
-        
+
         long endTime = System.currentTimeMillis();
         log("[" + requestName + "] time: " + (endTime - startTime) + "ms, sum: " + sum);
     }
